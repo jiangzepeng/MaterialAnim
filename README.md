@@ -1,7 +1,8 @@
 ## Share Element
 由一张图片过度到一个界面，适用于购物车图片直接跳转到商品详情界面，圆形按钮的过度也可以应用于圆形菜单里
 <center>
-![share.gif](http://upload-images.jianshu.io/upload_images/1750086-6174a1f75902a802.gif?imageMogr2/auto-orient/strip) </center>
+![share.gif](http://upload-images.jianshu.io/upload_images/1750086-6174a1f75902a802.gif?imageMogr2/auto-orient/strip) 
+</center>
 
 ### 实现原理
 利用android 5.0 提供的方法，实现共享元素动画的过度，实现原理很简单，在界面跳转的时候加入以下代码
@@ -44,7 +45,6 @@
 
 折叠式的标题栏，这个是系统提供的动画效果，引用系统控件就好了
 <center>
-
 ![fold.gif](http://upload-images.jianshu.io/upload_images/1750086-706fd47f5f53cda8.gif?imageMogr2/auto-orient/strip)
 </center>
 
@@ -82,63 +82,68 @@
 		}
 
 3. **布局文件代码**
-	<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:app="http://schemas.android.com/apk/res-auto"
-	    android:id="@+id/main_content"
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent">
+
 	
-	    <android.support.design.widget.AppBarLayout
-	        android:id="@+id/appbar"
-	        android:layout_width="match_parent"
-	        android:layout_height="300dp"
-	        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-	
-	        <android.support.design.widget.CollapsingToolbarLayout
-	            android:id="@+id/collapsing_toolbar"
-	            android:layout_width="match_parent"
-	            android:layout_height="match_parent"
-	            app:contentScrim="?attr/colorPrimary"
-	            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-	            app:title="Share Element">
-	
-	            <ImageView
-	                android:id="@+id/image"
-	                android:layout_width="match_parent"
-	                android:layout_height="match_parent"
-	                android:src="@drawable/sample"
-	                android:scaleType="centerCrop"
-	                app:layout_collapseMode="parallax"
-	                app:layout_collapseParallaxMultiplier="0.5"
-	                />
-	
-	            <android.support.v7.widget.Toolbar
-	                android:id="@+id/toolbar"
-	                android:layout_width="match_parent"
-	                android:layout_height="?attr/actionBarSize"
-	                app:layout_collapseMode="pin" />
-	
-	        </android.support.design.widget.CollapsingToolbarLayout>
-	
-	    </android.support.design.widget.AppBarLayout>
-	
-	    <android.support.v4.widget.NestedScrollView
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent"
-	        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-	
-	        <TextView
-	            android:id="@+id/content"
-	            android:layout_width="match_parent"
-	            android:layout_height="match_parent"
-	            android:text="test"
-	            android:textColor="@color/black"
-	            android:textSize="20sp"
-	            android:padding="10dp"/>
-	
-	    </android.support.v4.widget.NestedScrollView>
-	
-	</android.support.design.widget.CoordinatorLayout>
+	```
+		<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:app="http://schemas.android.com/apk/res-auto"
+		    android:id="@+id/main_content"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+		
+		    <android.support.design.widget.AppBarLayout
+		        android:id="@+id/appbar"
+		        android:layout_width="match_parent"
+		        android:layout_height="300dp"
+		        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		
+		        <android.support.design.widget.CollapsingToolbarLayout
+		            android:id="@+id/collapsing_toolbar"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            app:contentScrim="?attr/colorPrimary"
+		            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+		            app:title="Share Element">
+		
+		            <ImageView
+		                android:id="@+id/image"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:src="@drawable/sample"
+		                android:scaleType="centerCrop"
+		                app:layout_collapseMode="parallax"
+		                app:layout_collapseParallaxMultiplier="0.5"
+		                />
+		
+		            <android.support.v7.widget.Toolbar
+		                android:id="@+id/toolbar"
+		                android:layout_width="match_parent"
+		                android:layout_height="?attr/actionBarSize"
+		                app:layout_collapseMode="pin" />
+		
+		        </android.support.design.widget.CollapsingToolbarLayout>
+		
+		    </android.support.design.widget.AppBarLayout>
+		
+		    <android.support.v4.widget.NestedScrollView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		
+		        <TextView
+		            android:id="@+id/content"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:text="test"
+		            android:textColor="@color/black"
+		            android:textSize="20sp"
+		            android:padding="10dp"/>
+		
+		    </android.support.v4.widget.NestedScrollView>
+		
+		</android.support.design.widget.CoordinatorLayout>
+		
+	```
 
 ### 布局文件的一些属性说明
 1. **layout_scrollFlags**
@@ -158,7 +163,7 @@
 	```
 
 <br>
-## Reveal Animation
+## RevealAnimation
 
 google爸爸自从5.0之后对动画效果特别注重，这里给大家介绍一个波纹效果，也是系统提供的
 <center>
