@@ -1,11 +1,10 @@
 ## Share Element
----
 由一张图片过度到一个界面，适用于购物车图片直接跳转到商品详情界面，圆形按钮的过度也可以应用于圆形菜单里
 <center>
 ![share.gif](http://upload-images.jianshu.io/upload_images/1750086-6174a1f75902a802.gif?imageMogr2/auto-orient/strip) </center>
 
 ### 实现原理
-利用android 5.0 提供的方法，实现共享元素动画的过度，实现原理很简单，在界面跳转的时候加入以下代码ces
+利用android 5.0 提供的方法，实现共享元素动画的过度，实现原理很简单，在界面跳转的时候加入以下代码
 
 1. **java代码**
 
@@ -41,15 +40,15 @@
 	```
 <br>
 
-##CollapsingToolbarLayout
----
+## CollapsingToolbarLayout
+
 折叠式的标题栏，这个是系统提供的动画效果，引用系统控件就好了
 <center>
 
 ![fold.gif](http://upload-images.jianshu.io/upload_images/1750086-706fd47f5f53cda8.gif?imageMogr2/auto-orient/strip)
 </center>
 
-###代码实现
+### 代码实现
 1. **gradle里的引用**
 
 	```
@@ -57,30 +56,31 @@
 	```
 
 2. **java代码**<br>
-	<pre><code>
-@Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collapsing_toolbar);
-        ButterKnife.bind(this);
-        content.setText(R.string.content);
-		initToolbar();
-    }
-    private void initToolbar() {
-        collapsingToolbar.setTitle("折叠式标题栏");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-   //toolbar返回事件实现
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-	</code></pre>
+
+		@Override
+		protected void onCreate(@Nullable Bundle savedInstanceState) {
+		    super.onCreate(savedInstanceState);
+		    setContentView(R.layout.activity_collapsing_toolbar);
+		    ButterKnife.bind(this);
+		    content.setText(R.string.content);
+			initToolbar();
+		}
+		
+		private void initToolbar() {
+		    collapsingToolbar.setTitle("折叠式标题栏");
+		    setSupportActionBar(toolbar);
+		    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		}
+		//toolbar返回事件实现
+		@Override
+		public boolean onOptionsItemSelected(MenuItem item) {
+		    if (item.getItemId() == android.R.id.home) {
+		        finish();
+		        return true;
+		    }
+		    return super.onOptionsItemSelected(item);
+		}
+
 3. **布局文件代码**
 	<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	    xmlns:app="http://schemas.android.com/apk/res-auto"
