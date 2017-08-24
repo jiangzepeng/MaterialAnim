@@ -158,8 +158,8 @@
 	```
 
 <br>
-##Reveal Animation
----
+## Reveal Animation
+
 google爸爸自从5.0之后对动画效果特别注重，这里给大家介绍一个波纹效果，也是系统提供的
 <center>
 ![reveal.gif](http://upload-images.jianshu.io/upload_images/1750086-09a84314d5b373ea.gif?imageMogr2/auto-orient/strip)
