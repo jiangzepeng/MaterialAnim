@@ -17,8 +17,6 @@
             android:layout_height="300dp"
             android:src="@drawable/sample"
             android:transitionName="@string/share_tag"
-            app:layout_collapseMode="parallax"
-            app:layout_collapseParallaxMultiplier="0.5"
             app:tiv_rounding="0" />
 
         <TextView

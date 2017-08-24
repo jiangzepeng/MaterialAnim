@@ -54,7 +54,6 @@ public class CollapsingToolbarActivity extends AppCompatActivity {
             finish();
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
