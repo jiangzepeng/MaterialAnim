@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_parent">
+
+    <com.jzp.materialanim.common.TransitionImageView
+        android:id="@+id/item_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/sample"
+        android:transitionName="@string/share_tag"/>
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+
+</LinearLayout>
