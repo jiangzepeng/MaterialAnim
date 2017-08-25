@@ -46,6 +46,7 @@
 
 
 <img src="http://upload-images.jianshu.io/upload_images/1750086-706fd47f5f53cda8.gif?imageMogr2/auto-orient/strip"   align=center />
+
 ### 代码实现
 1. **gradle里的引用**
 
@@ -164,9 +165,9 @@
 
 ## RevealAnimation
 google爸爸自从5.0之后对动画效果特别注重，这里给大家介绍一个波纹效果，也是系统提供的
-<div align=center>
+
 ![reveal.gif](http://upload-images.jianshu.io/upload_images/1750086-09a84314d5b373ea.gif?imageMogr2/auto-orient/strip)
-</div>
+
 
 #### 实现原理
 
