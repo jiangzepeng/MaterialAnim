@@ -1,7 +1,7 @@
 ## Share Element
 由一张图片过度到一个界面，适用于购物车图片直接跳转到商品详情界面，圆形按钮的过度也可以应用于圆形菜单里
 <p align="center">
-    <img src="http://upload-images.jianshu.io/upload_images/1750086-6174a1f75902a802.gif?imageMogr2/auto-orient/strip?raw=true" width="300" height="533" />
+    <img src="http://upload-images.jianshu.io/upload_images/1750086-6174a1f75902a802.gif?imageMogr2/auto-orient/strip" width="300" height="533" />
 </p>
 
 ### 实现原理
