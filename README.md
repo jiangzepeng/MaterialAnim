@@ -1,8 +1,8 @@
 ## Share Element
 由一张图片过度到一个界面，适用于购物车图片直接跳转到商品详情界面，圆形按钮的过度也可以应用于圆形菜单里
-<div align=center>
+
 ![](http://upload-images.jianshu.io/upload_images/1750086-6174a1f75902a802.gif?imageMogr2/auto-orient/strip) 
-</div>
+
 ### 实现原理
 利用android 5.0 提供的方法，实现共享元素动画的过度，实现原理很简单，在界面跳转的时候加入以下代码
 
@@ -44,9 +44,8 @@
 
 折叠式的标题栏，这个是系统提供的动画效果，引用系统控件就好了
 
-![fold.gif](http://upload-images.jianshu.io/upload_images/1750086-706fd47f5f53cda8.gif?imageMogr2/auto-orient/strip)
 
-
+<img src="http://upload-images.jianshu.io/upload_images/1750086-706fd47f5f53cda8.gif?imageMogr2/auto-orient/strip"   align=center />
 ### 代码实现
 1. **gradle里的引用**
 
