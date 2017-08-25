@@ -1,7 +1,7 @@
 ## Share Element
 由一张图片过度到一个界面，适用于购物车图片直接跳转到商品详情界面，圆形按钮的过度也可以应用于圆形菜单里
 <p align="center">
-    <img src="http://upload-images.jianshu.io/upload_images/1750086-6174a1f75902a802.gif?imageMogr2/auto-orient/strip" width="300" height="533" />
+    <img src="image/share.gif"/>
 </p>
 
 ### 实现原理
@@ -45,7 +45,7 @@
 
 折叠式的标题栏，这个是系统提供的动画效果，引用系统控件就好了
 <p align="center">
-    <img src="http://upload-images.jianshu.io/upload_images/1750086-706fd47f5f53cda8.gif?imageMogr2/auto-orient/strip" width="300" height="533" />
+    <img src="image/fold.gif"/>
 </p>
 
 ### 代码实现
@@ -168,7 +168,7 @@
 google爸爸自从5.0之后对动画效果特别注重，这里给大家介绍一个波纹效果，也是系统提供的
 
 <p align="center">
-    <img src="http://upload-images.jianshu.io/upload_images/1750086-09a84314d5b373ea.gif?imageMogr2/auto-orient/strip" width="300" height="533" />
+    <img src="image/reveal.gif" />
 </p>
 
 #### 实现原理
