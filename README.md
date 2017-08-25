@@ -1,8 +1,8 @@
 ## Share Element
 由一张图片过度到一个界面，适用于购物车图片直接跳转到商品详情界面，圆形按钮的过度也可以应用于圆形菜单里
-
+<center>
 ![](http://upload-images.jianshu.io/upload_images/1750086-6174a1f75902a802.gif?imageMogr2/auto-orient/strip) 
-
+</center>
 
 ### 实现原理
 利用android 5.0 提供的方法，实现共享元素动画的过度，实现原理很简单，在界面跳转的时候加入以下代码
@@ -45,7 +45,7 @@
 
 折叠式的标题栏，这个是系统提供的动画效果，引用系统控件就好了
 <center>
-![fold.gif](http://upload-images.jianshu.io/upload_images/1750086-706fd47f5f53cda8.gif?imageMogr2/auto-orient/strip)
+![](http://upload-images.jianshu.io/upload_images/1750086-706fd47f5f53cda8.gif?imageMogr2/auto-orient/strip)
 </center>
 
 ### 代码实现
@@ -167,7 +167,7 @@
 ## RevealAnimation
 google爸爸自从5.0之后对动画效果特别注重，这里给大家介绍一个波纹效果，也是系统提供的
 <center>
-![reveal.gif](http://upload-images.jianshu.io/upload_images/1750086-09a84314d5b373ea.gif?imageMogr2/auto-orient/strip)
+![](http://upload-images.jianshu.io/upload_images/1750086-09a84314d5b373ea.gif?imageMogr2/auto-orient/strip)
 </center>
 
 #### 实现原理
